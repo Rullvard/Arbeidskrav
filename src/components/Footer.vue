@@ -1,13 +1,15 @@
 <template>
-  <footer>
-    <div class="some">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-soundcloud"></i></a>
-      <a href="#"><i class="fab fa-spotify"></i></a>
-    </div>
-  </footer>
+  <div class="footer-wrap">
+    <footer>
+      <div class="some">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-soundcloud"></i></a>
+        <a href="#"><i class="fab fa-spotify"></i></a>
+      </div>
+    </footer>
+  </div>
 </template>
 
 <script>
@@ -15,6 +17,10 @@ export default {};
 </script>
 
 <style>
+.footer-wrap {
+  padding-top: 100px;
+}
+
 footer {
   position: fixed;
   left: 0;

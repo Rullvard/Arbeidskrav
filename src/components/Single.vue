@@ -1,11 +1,22 @@
 <template>
-  <h3>{{ singleTitle }}</h3>
-  <img :src="require(`@/assets/${image}`)" />
-  <p>{{ releaseYear }}</p>
+  <section>
+    <div class="single-wrap">
+      <h3>{{ singleTitle }}</h3>
+      <img
+        class="cover-img"
+        :src="require(`@/assets/${image}`)"
+        @click="toggleModal"
+      />
+      <p>{{ releaseYear }}</p>
+    </div>
+  </section>
 </template>
 
 <script>
+import Modal from "../components/Modal";
+
 export default {
+  components: { Modal },
   props: {
     singleTitle: String,
     releaseYear: String,
@@ -18,4 +29,7 @@ export default {
 </script>
 
 <style>
+.cover-img {
+  max-width: 322px;
+}
 </style>

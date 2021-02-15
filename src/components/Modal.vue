@@ -21,6 +21,7 @@ export default {
 <style>
 .backdrop {
   top: 0;
+  left: 0;
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -28,24 +29,10 @@ export default {
 }
 
 .modal {
-  width: 400px;
+  width: 600px;
   padding: 20px;
-  margin: 100px auto;
-  background: white;
+  margin: 50px auto;
+  background: #394453;
   border-radius: 10px;
-}
-
-.modal .actions {
-  text-align: center;
-  margin: 30px 0 10px 0;
-}
-
-.modal .actions a {
-  color: #333;
-  padding: 8px;
-  margin: 10px;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  text-decoration: none;
 }
 </style>
